@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id('id_barang');
             $table->char('jenis_barang', 1);
             $table->string('nama_barang', 45);
-            $table->tinyint('status_barang');
-            $table->int('harga');
+            $table->tinyInteger('status_barang');
+            $table->float('harga');
             $table->timestamps();
         });
     }

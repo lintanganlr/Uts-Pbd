@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('create_satuan', function (Blueprint $table) {
             $table->id('id_satuan');
             $table->string('nama_satuan', 45);
-            $table->TinyInt('status');
+            $table->tinyInteger('status');
             $table->timestamps();
         });
     }
